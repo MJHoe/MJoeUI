@@ -1,0 +1,353 @@
+{
+  "138": {
+    "inputs": {
+      "fps": 24,
+      "video_trim_seconds": "auto",
+      "audio_trim_seconds": "auto",
+      "image_max_side": "auto",
+      "video_max_side": "512",
+      "prompt": "subject_definitions:\n<Subject 1> 是 <Picture 1> 中的多视图角色设定，红衣龙盔剑士，只使用一个身体。年轻女性，齐肩黑短发，留海分开，灰眸，肤色冷白，额上银龙盔，龙口与双角朝前，盔侧垂银流苏，不遮眼、不遮口，红丝绒短袍绣金龙，黑皮高领正中一枚金花扣，黑皮手套，左臂银甲，大红披风背面一条金龙、下摆到膝，右手一柄银长剑，背后一柄黑白缠柄长剑，银龙首高跟战靴。披风上的金龙只是刺绣，不变成龙，也不离开布面。剑走银白色的细光。\n<Subject 2> 是 <Picture 2> 中的多视图角色设定，恶魔王，只使用一个身体，比剑士高出一个头。赤红裂纹皮肤，灰白长发，两根完整的弯角，尖耳，黄瞳，獠牙，破布战裙，皮带与暗色肩甲，赤足，背上交叉背着数柄长剑，右手握其中一柄，双手是正常比例的红色爪手。剑走暗红色的光。两只角在最后一击之前保持完整。\n<Subject 3> 是 <Picture 3> 中的骷髅骑士团。每名骑士头盔下是白骨骷髅脸，没有皮肉，身穿锈黑日式铠甲，戴角盔，背插圆纹破旗，骑着只剩白骨的骨马。\n<Picture 4> 是场景参考：雾中荒原战场。前景和中景是开阔湿泥地，有倒影，插着断矛、散落头盔，左侧一排破红旗，右侧倾倒的木架；残堡灰黑色，很小，立在远处浓雾里。\n\nsummary:\n[reference generation] 做一条十五秒的游戏 CG 预告片，16:9，镜头之间硬切。<Subject 1> 与 <Subject 2> 开场已经在半空撞剑，时间冻结后弹回；她被震退滑行，穿过他的三剑，顺着他的剑跑上肩侧，慢动作一剑砍掉他的左角，最后单膝落在前景，他跪在她身后。披风上的金龙只是刺绣。\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4], [Shot 5], [Shot 6]): fully_preserved - 齐肩黑短发、银龙盔、银流苏、红丝绒短袍、大红披风、黑皮高领、左臂银甲、银长剑、背后黑白缠柄长剑和银龙高跟战靴保持不变。金龙纹留在披风布面上。\n<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3], [Shot 4], [Shot 5], [Shot 6]): fully_preserved - 赤红裂纹皮肤、灰白长发、黄瞳、獠牙、破布战裙、肩甲、赤足和背上的剑保持不变。右手始终握着一柄长剑。头留在脖子上，右角全程完整。[Shot 1] 到 [Shot 4] 两只角都完整。[Shot 5] 起左角被砍掉。\n<Subject 3> (appears in [Shot 1], [Shot 3], [Shot 6]): fully_preserved - 骷髅脸、锈黑铠甲、角盔、圆纹破旗和白骨马保持不变，全程骑在马上，停在外圈，不参战。\n<Picture 1> ([Shot 1] 到 [Shot 6] 的剑士外观): fully_preserved - 多视图只锁定同一个人。\n<Picture 2> ([Shot 1] 到 [Shot 6] 的恶魔王外观): fully_preserved - 多视图只锁定同一个恶魔王。\n<Picture 3> ([Shot 1]、[Shot 3]、[Shot 6] 的骑士外观): fully_preserved - 骷髅骑士与白骨马保持一致。\n<Picture 4> ([Shot 1] 首帧战场): fully_preserved - 湿泥在中央，骑士在外圈，残堡缩在远处雾里。\n\ndetailed_description:\n3A 游戏过场，虚幻引擎风格化写实，轮廓光，体积雾，湿泥、皮革和金属的质感清楚，快动作带运动模糊，轻微胶片颗粒，暗部仍能看清脸和剑。冷白雾从远处打来。银白只属于 <Subject 1> 的剑，暗红只属于 <Subject 2> 的剑。场景沿用 <Picture 4>。除开头的时间冻结和 11 秒的慢动作重击外，其余是 1.0 倍速。每次换镜都是硬切。画面不出现字幕、白底和三视图。\n[Shot 1] 中景。冷开场，<Subject 1> 和 <Subject 2> 已经在半空，银剑和长剑正好锁在一起。时间冻结，雾里的水珠停住，两剑周围的火星也停住。她在画面左侧，他在右侧，两人都侧对镜头。<Subject 3> 停在远处的圈子上，也是静止的。镜头绕着这次碰撞慢慢转过 180 度，雾从背后勾出两人的轮廓。3 秒时时间弹回，一圈冲击波把停住的水珠向外掀开。Arc Shot with large amplitude at slow speed，冻结期间绕行，时间弹回时停住。\n[Shot 2] At 00:03.000, 硬切到低角度。接上冲击刚爆开。<Subject 1> 被震得向后飞，空中后翻，落在湿泥上滑行，银剑在泥里擦出一串火星，披风拖在身后。结束时她还在滑，没有站起。Tracking Shot with large amplitude at fast speed，贴着泥地跟着她滑行。\n[Shot 3] At 00:05.000, 硬切。<Subject 2> 连续刺出三剑，<Subject 1> 在三剑之间穿过去，银白和暗红每次擦过都迸一点火星。穿插之后给一个很短的俯拍，两人在泥地上互相绕。两只角都完整。<Subject 3> 仍在外圈马上。Tracking Shot with large amplitude at fast speed，俯拍只有一下，随即回到侧面。\n[Shot 4] At 00:08.000, 硬切到跟拍。<Subject 1> 向前冲，顺着 <Subject 2> 横在身前的那柄长剑跑上去，一步到剑身，一步到他肩侧，雾从镜头前掠过。这一镜中间不切。结束时她已经在他肩侧。Tracking Shot with large amplitude at fast speed，贴着她跑过的剑身。\n[Shot 5] At 00:11.000, 硬切到慢动作。她在他肩侧腾空，旋身，银剑自上而下斩落，拖着一道银白的光。剑砍掉 <Subject 2> 的左角，断角翻落。头留在脖子上，右角还在。命中的那一帧闪一下白。冲击把他压得单膝跪进泥里。Slow motion，Push In with small amplitude at slow speed，从两人砍中推到剑与左角的接触点。\n[Shot 6] At 00:14.000, 硬切到海报帧。<Subject 1> 落在前景，单膝点地，银剑横在身前，披风还在动，正面略侧对镜头。<Subject 2> 跪在她身后，剑撑着地，左角已经不在，右角还在，灰白长发垂下来。<Subject 3> 仍在外圈马上。雾变薄，两人头顶留出空。这一帧停到结尾。Static Shot。\n\noverall_soundscape:\n风和雾是底。冻结的三秒里只有一声拉长的金属鸣和一下很慢的心跳。3 秒时间弹回时一个低音正好落上。每次剑相碰是短促的金属声和破风，滑行时剑尖擦过湿泥。11 秒砍断左角时一声短促的脆响。14 秒所有声音退下，只剩风和她一次缓慢的呼气。\n\nnon_diegetic_music:\n预告片鼓点，太鼓和低频混合，无歌词。每一次硬切上落一击。3 秒时间弹回时一个低音下沉。11 秒的慢动作里鼓拉成一个长音，命中白闪时重击一次。14 秒音乐收掉。",
+      "seconds": 15,
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 1,
+      "multiple": 32,
+      "ref_image_0": "IB3VowLDUtUQ9gCyqZdBQ_Ih4PV2O8_26966f8e6b96.png",
+      "ref_image_1": "hf_20260425_181834_62c07669-a286-4ec4-91_051f5d791a39.png",
+      "ref_image_2": "hf_20260430_160408_c84a5f2a-8dfd-4ccd-9a_a11b28d2048e.png",
+      "ref_image_3": "hf_20261007_114709_0946bad7-0ec6-46c9-a2_c57019e7c382.png"
+    },
+    "class_type": "ZealmanH3PickReferenceMedia",
+    "_meta": {
+      "title": "ZealmanH3素材选择"
+    }
+  },
+  "141": {
+    "inputs": {
+      "prompt": [
+        "138",
+        18
+      ],
+      "width": [
+        "138",
+        19
+      ],
+      "height": [
+        "138",
+        20
+      ],
+      "length": [
+        "138",
+        21
+      ],
+      "ref_image_size": "match",
+      "clip": [
+        "286",
+        1
+      ],
+      "vae": [
+        "286",
+        2
+      ],
+      "audio_vae": [
+        "286",
+        3
+      ],
+      "ref_images.ref_image_0": [
+        "138",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "138",
+        1
+      ],
+      "ref_images.ref_image_2": [
+        "138",
+        2
+      ],
+      "ref_images.ref_image_3": [
+        "138",
+        3
+      ],
+      "ref_images.ref_image_4": [
+        "138",
+        4
+      ],
+      "ref_videos.ref_video_0": [
+        "138",
+        9
+      ],
+      "ref_audios.ref_audio_0": [
+        "138",
+        15
+      ],
+      "ref_audios.ref_audio_1": [
+        "138",
+        16
+      ],
+      "ref_audios.ref_audio_2": [
+        "138",
+        17
+      ],
+      "ref_images.ref_image_5": [
+        "138",
+        5
+      ],
+      "ref_images.ref_image_6": [
+        "138",
+        6
+      ],
+      "ref_images.ref_image_7": [
+        "138",
+        7
+      ],
+      "ref_images.ref_image_8": [
+        "138",
+        8
+      ]
+    },
+    "class_type": "MiniMaxH3ReferenceToVideo",
+    "_meta": {
+      "title": "MiniMax H3 参考生成视频",
+      "cnr_id": "comfy-core",
+      "ver": "0.44.0"
+    }
+  },
+  "142": {
+    "inputs": {
+      "frame_rate": 24,
+      "filename_prefix": "V7",
+      "save_output": true,
+      "images": [
+        "272",
+        0
+      ],
+      "audio": [
+        "273",
+        0
+      ]
+    },
+    "class_type": "ZealmanVideoOutput",
+    "_meta": {
+      "title": "Zealman 视频输出"
+    }
+  },
+  "272": {
+    "inputs": {
+      "tiling": true,
+      "tile_size": 256,
+      "tile_overlap": 64,
+      "output_device": "cpu",
+      "temporal_tiling": false,
+      "temporal_tile_frames": 85,
+      "temporal_context_frames": 39,
+      "seam_warning_threshold": 0.02,
+      "samples": [
+        "287",
+        0
+      ],
+      "vae": [
+        "286",
+        2
+      ]
+    },
+    "class_type": "MiniMaxH3VAEDecodeFast",
+    "_meta": {
+      "title": "MiniMax H3 VAE Decode (fast)",
+      "aux_id": "TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler",
+      "ver": "2e568dfe3e4f5e81da178bc845e05dcfbb64d55b"
+    }
+  },
+  "273": {
+    "inputs": {
+      "samples": [
+        "287",
+        0
+      ],
+      "vae": [
+        "286",
+        3
+      ]
+    },
+    "class_type": "VAEDecodeAudio",
+    "_meta": {
+      "title": "VAE解码（音频）",
+      "cnr_id": "comfy-core",
+      "ver": "0.33.0"
+    }
+  },
+  "277": {
+    "inputs": {
+      "scheduler": "simple",
+      "steps": 8,
+      "denoise": 1,
+      "model": [
+        "290",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "基本调度器",
+      "cnr_id": "comfy-core",
+      "ver": "0.33.0"
+    }
+  },
+  "281": {
+    "inputs": {
+      "extra_steps": 2,
+      "start_at_sigma": 0.7,
+      "end_at_sigma": 0,
+      "spacing": "cosine",
+      "sigmas": [
+        "277",
+        0
+      ]
+    },
+    "class_type": "H3SigmaRefiner",
+    "_meta": {
+      "title": "H3 Sigma Refiner",
+      "aux_id": "yichengup/ComfyUI-YCNodes-MiniMax-H3",
+      "ver": "146207295c1d2bd6b64a6552484cb6ed8be1c9ef"
+    }
+  },
+  "282": {
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "K采样器选择",
+      "cnr_id": "comfy-core",
+      "ver": "0.33.0"
+    }
+  },
+  "283": {
+    "inputs": {
+      "conditioning": [
+        "141",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "条件零化",
+      "cnr_id": "comfy-core",
+      "ver": "0.34.0"
+    }
+  },
+  "286": {
+    "inputs": {
+      "unet_name": "minimax/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default",
+      "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "clip_device": "default",
+      "video_vae": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+      "attention": "comfy kitchen attention",
+      "lora_1": {
+        "on": true,
+        "lora": "minimax/minimax_h3_turbo_v4_step600_ema_pruned_comfyui.safetensors",
+        "strength": 0.75
+      },
+      "lora_2": {
+        "on": false,
+        "lora": "minimax/Motion_Repair_V2.safetensors",
+        "strength": 0.25
+      }
+    },
+    "class_type": "ZealmanH3ModelLoader",
+    "_meta": {
+      "title": "ZealmanH3模型加载"
+    }
+  },
+  "287": {
+    "inputs": {
+      "seed": 666,
+      "cfg": 1,
+      "transition_step": 6,
+      "lowres_scale": 0.5,
+      "rho": 0,
+      "w_min": 0.5,
+      "w_max": 1,
+      "upscaler_model": "minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors",
+      "highres_tiling": true,
+      "tiling_mode": "auto",
+      "tiling_tiles": 2,
+      "tiling_axis": "auto",
+      "highres_tiling_mode": "global_stream",
+      "highres_token_chunk": 4096,
+      "highres_weight_cache_gb": 4,
+      "low_res_model": [
+        "290",
+        0
+      ],
+      "positive": [
+        "141",
+        0
+      ],
+      "negative": [
+        "283",
+        0
+      ],
+      "vae": [
+        "286",
+        2
+      ],
+      "latent_image": [
+        "141",
+        1
+      ],
+      "sampler": [
+        "282",
+        0
+      ],
+      "sigmas": [
+        "281",
+        0
+      ]
+    },
+    "class_type": "SelfLiftAvatarH3Sampler",
+    "_meta": {
+      "title": "selflift-Avatar Sampler (MiniMax H3)",
+      "cnr_id": "selflift-avatar",
+      "ver": "af4d50129fe7f8e9066fc26e368b175f33ddb3df"
+    }
+  },
+  "288": {
+    "inputs": {
+      "enabled": true,
+      "rack": "[{\"on\":true,\"dial\":\"h3_motion\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_arcane_sigils\",\"strength\":2},{\"on\":false,\"dial\":\"h3_aura\",\"strength\":0.5},{\"on\":true,\"dial\":\"h3_blur_moving_edges_hook\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_colour_drain\",\"strength\":4},{\"on\":false,\"dial\":\"h3_dramatic_light\",\"strength\":1.5},{\"on\":false,\"dial\":\"h3_evil_cold\",\"strength\":1.5},{\"on\":false,\"dial\":\"h3_evil_corrupted\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_evil_creepy\",\"strength\":-1},{\"on\":true,\"dial\":\"h3_evil_dread\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_evil_impish\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_evil_seductive\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_evil_sinister\",\"strength\":1},{\"on\":false,\"dial\":\"h3_evil_unhinged\",\"strength\":0.5},{\"on\":false,\"dial\":\"h3_impact_frame\",\"strength\":2},{\"on\":false,\"dial\":\"h3_ink_wash\",\"strength\":1.5},{\"on\":false,\"dial\":\"h3_motion_lora\",\"strength\":0.75},{\"on\":false,\"dial\":\"h3_psychedelic\",\"strength\":2},{\"on\":false,\"dial\":\"h3_space_warp\",\"strength\":3},{\"on\":false,\"dial\":\"h3_storm\",\"strength\":2},{\"on\":false,\"dial\":\"experimental/h3_x_datamosh\",\"strength\":2},{\"on\":false,\"dial\":\"experimental/h3_x_film_artifact\",\"strength\":3},{\"on\":false,\"dial\":\"experimental/h3_x_memory_present\",\"strength\":3},{\"on\":false,\"dial\":\"experimental/h3_x_oil_pixel\",\"strength\":2.5},{\"on\":false,\"dial\":\"experimental/h3_x_order_entropy\",\"strength\":3},{\"on\":false,\"dial\":\"experimental/h3_x_owl_octopus\",\"strength\":2.5},{\"on\":false,\"dial\":\"experimental/h3_x_silentfilm_cyberpunk\",\"strength\":1.5},{\"on\":false,\"dial\":\"experimental/h3_x_sinister_noview\",\"strength\":1},{\"on\":false,\"dial\":\"experimental/h3_x_template_placebo\",\"strength\":0.5},{\"on\":false,\"dial\":\"experimental/h3_x_vhs\",\"strength\":1.5}]",
+      "model": [
+        "286",
+        0
+      ]
+    },
+    "class_type": "ZealmanH3Dials",
+    "_meta": {
+      "title": "Zealman H3 Dials"
+    }
+  },
+  "290": {
+    "inputs": {
+      "max_resolution": 1024,
+      "jpeg_quality": 80,
+      "suppress_default_preview": true,
+      "preview_frames": [
+        "138",
+        21
+      ],
+      "preview_fps": 12,
+      "tiny_vae": "taeh3.safetensors",
+      "model": [
+        "288",
+        0
+      ]
+    },
+    "class_type": "ModelPreviewOverrideKJ",
+    "_meta": {
+      "title": "Model Preview Override",
+      "cnr_id": "comfyui-kjnodes",
+      "ver": "unknown"
+    }
+  }
+}

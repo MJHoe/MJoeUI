@@ -1,0 +1,163 @@
+/*
+ * MJoeUI — "sticker album"
+ * Results are die-cut stickers on dotted journal paper. Washi tape marks
+ * what a workflow is for. Strawberry jelly is reserved for "generate" and
+ * anything in flight; everything else stays ink-on-paper.
+ */
+:root {
+  --font-display: 'Bricolage Grotesque Variable', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-body: 'Nunito Variable', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* paper & ink */
+  --paper: #F2F3F7;
+  --paper-dot: #D5D7E2;
+  --card: #FFFFFF;
+  --well: #F6F6F9;
+  --well-2: #ECECF2;
+  --ink: #24222E;
+  --ink-2: #45424F;
+  --ink-soft: #6E6B7B;
+  --ink-faint: #A3A1AE;
+  --line: #E4E4EC;
+  --line-2: #D4D4DF;
+  --on-ink: #FFFFFF;
+
+  /* strawberry jelly — generate / in-flight only */
+  --jelly: #FF5C7A;
+  --jelly-hi: #FF8098;
+  --jelly-deep: #E5405F;
+  --jelly-soft: rgb(255 92 122 / 0.12);
+  --jelly-glow: rgb(255 92 122 / 0.34);
+
+  --ok: #14A06D;
+  --ok-soft: rgb(20 160 109 / 0.12);
+  --bad: #DD4F2B;
+  --bad-soft: rgb(221 79 43 / 0.1);
+  --star: #F2A516;
+  --focus: #24222E;
+  --focus-soft: rgb(36 34 46 / 0.12);
+
+  /* washi tapes by category */
+  --t2i: #FFD3B6;      --t2i-ink: #8A4320;
+  --i2i: #FFEDA8;      --i2i-ink: #725A0B;
+  --t2v: #BFEBD9;      --t2v-ink: #1B6649;
+  --i2v: #BFE3F5;      --i2v-ink: #1C5B7C;
+  --upscale: #DCD3FF;  --upscale-ink: #4B3BA3;
+  --other: #E6E6EC;    --other-ink: #52505F;
+
+  /* stickers */
+  --sticker-edge: #FFFFFF;
+  --peel: #E6E6EE;
+  --sticker-shadow: 0 1px 1px rgb(36 34 46 / 0.06), 0 3px 8px rgb(36 34 46 / 0.10);
+  --sticker-shadow-up: 0 2px 3px rgb(36 34 46 / 0.06), 0 12px 24px rgb(36 34 46 / 0.16);
+
+  --shadow-1: 0 1px 2px rgb(36 34 46 / 0.05), 0 2px 8px rgb(36 34 46 / 0.04);
+  --shadow-2: 0 2px 4px rgb(36 34 46 / 0.05), 0 10px 24px rgb(36 34 46 / 0.09);
+  --shadow-3: 0 6px 14px rgb(36 34 46 / 0.08), 0 24px 56px rgb(36 34 46 / 0.16);
+
+  --r-xs: 6px;
+  --r-sm: 9px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --syn-key: #7A4BD0;
+  --syn-string: #C7365A;
+  --syn-number: #1F7FA8;
+  --syn-atom: #C07A0A;
+
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --paper: #15151B;
+  --paper-dot: #282832;
+  --card: #1E1E26;
+  --well: #191920;
+  --well-2: #282831;
+  --ink: #F1F0F6;
+  --ink-2: #D3D1DD;
+  --ink-soft: #9D9AAC;
+  --ink-faint: #67657A;
+  --line: #2C2C37;
+  --line-2: #3A3A47;
+  --on-ink: #15151B;
+
+  --jelly: #FF6F8A;
+  --jelly-hi: #FF91A5;
+  --jelly-deep: #EA4F6D;
+  --jelly-soft: rgb(255 111 138 / 0.14);
+  --jelly-glow: rgb(255 111 138 / 0.28);
+
+  --ok: #3DCB93;
+  --ok-soft: rgb(61 203 147 / 0.14);
+  --bad: #FF7A55;
+  --bad-soft: rgb(255 122 85 / 0.12);
+  --focus: #F1F0F6;
+  --focus-soft: rgb(241 240 246 / 0.16);
+
+  --sticker-edge: #F3F2F8;
+  --peel: #C9C8D4;
+  --sticker-shadow: 0 1px 1px rgb(0 0 0 / 0.3), 0 4px 10px rgb(0 0 0 / 0.35);
+  --sticker-shadow-up: 0 2px 4px rgb(0 0 0 / 0.3), 0 14px 28px rgb(0 0 0 / 0.5);
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-2: 0 2px 6px rgb(0 0 0 / 0.3), 0 10px 24px rgb(0 0 0 / 0.3);
+  --shadow-3: 0 8px 20px rgb(0 0 0 / 0.4), 0 28px 60px rgb(0 0 0 / 0.5);
+
+  --syn-key: #B79BFF;
+  --syn-string: #FF8FA8;
+  --syn-number: #7CC8EE;
+  --syn-atom: #F5BE5B;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #15151B;
+    --paper-dot: #282832;
+    --card: #1E1E26;
+    --well: #191920;
+    --well-2: #282831;
+    --ink: #F1F0F6;
+    --ink-2: #D3D1DD;
+    --ink-soft: #9D9AAC;
+    --ink-faint: #67657A;
+    --line: #2C2C37;
+    --line-2: #3A3A47;
+    --on-ink: #15151B;
+
+    --jelly: #FF6F8A;
+    --jelly-hi: #FF91A5;
+    --jelly-deep: #EA4F6D;
+    --jelly-soft: rgb(255 111 138 / 0.14);
+    --jelly-glow: rgb(255 111 138 / 0.28);
+
+    --ok: #3DCB93;
+    --ok-soft: rgb(61 203 147 / 0.14);
+    --bad: #FF7A55;
+    --bad-soft: rgb(255 122 85 / 0.12);
+    --focus: #F1F0F6;
+    --focus-soft: rgb(241 240 246 / 0.16);
+
+    --sticker-edge: #F3F2F8;
+    --peel: #C9C8D4;
+    --sticker-shadow: 0 1px 1px rgb(0 0 0 / 0.3), 0 4px 10px rgb(0 0 0 / 0.35);
+    --sticker-shadow-up: 0 2px 4px rgb(0 0 0 / 0.3), 0 14px 28px rgb(0 0 0 / 0.5);
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.3);
+    --shadow-2: 0 2px 6px rgb(0 0 0 / 0.3), 0 10px 24px rgb(0 0 0 / 0.3);
+    --shadow-3: 0 8px 20px rgb(0 0 0 / 0.4), 0 28px 60px rgb(0 0 0 / 0.5);
+
+    --syn-key: #B79BFF;
+    --syn-string: #FF8FA8;
+    --syn-number: #7CC8EE;
+    --syn-atom: #F5BE5B;
+
+    color-scheme: dark;
+  }
+}
